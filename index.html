@@ -580,30 +580,27 @@
 <!--my-skill-->
 <div class="my-skills text-center" id="skill">
   <div class="container">
-    <h3 class="tittle two cap">Interiors Capabilities</h3>
+    <h3 class="tittle two cap content-two-language" en="Interiors Capabilities" zh="能力评价" ></h3>
     <div class="skill-grids">
       <div class="col-md-3 skills-grid text-center">
         <div class="circle ic-circle" percent="70" id="circles-1"></div>
-        <p>CREATIVE</p>
+        <p class="content-two-language" en="CREATIVE" zh="创意"></p>
       </div>
       <div class="col-md-3 skills-grid text-center">
         <div class="circle ic-circle" percent="80" id="circles-2"></div>
-        <p>DESIGN</p>
+        <p class="content-two-language" en="DESIGN" zh="设计"></p>
       </div>
       <div class="col-md-3 skills-grid text-center">
         <div class="circle ic-circle" percent="90" id="circles-3"></div>
-        <p>DEVELOPER</p>
+        <p class="content-two-language" en="DEVELOPER" zh="开发"></p>
       </div>
       <div class="col-md-3 skills-grid text-center">
         <div class="circle ic-circle" percent="80" id="circles-4"></div>
-        <p>SOLUTION</p>
+        <p class="content-two-language" en="SOLUTION" zh="问题解决"></p>
       </div>
       <div class="clearfix"> </div>
       <script type="text/javascript" src="js/circles.js"></script>
       <script>
-        var colors = [
-          ['#524B46', '#ffffff'], ['#524B46', '#ffffff'], ['#524B46', '#ffffff'], ['#524B46', '#ffffff'], ['#524B46', '#ffffff'], ['#524B46', '#ffffff']
-        ];
         $('.ic-circle').each(function(){
           var child = document.getElementById($(this).attr('id'));
           var percentage = parseInt($(this).attr('percent'));
@@ -617,20 +614,6 @@
             colors:     ['#524B46', '#ffffff'],
           });
         });
-//        for (var i = 1; i <= 7; i++) {
-//          var child = document.getElementById('circles-' + i),
-//                  percentage = 30 + (i * 10);
-//
-//          Circles.create({
-//            id:         child.id,
-//            percentage: percentage,
-//            radius:     80,
-//            width:      10,
-//            number:   	percentage / 1,
-//            text:       '%',
-//            colors:     colors[i - 1]
-//          });
-//        }
       </script>
     </div>
   </div>
