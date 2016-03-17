@@ -9,3 +9,4 @@ A static showing page for a game (LMix).
 5. 高分辨率图片  
 6. 无衬线字体  
 7. 用户评价tag  
+8. 最后的提交？？？
