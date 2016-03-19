@@ -561,13 +561,26 @@
 <div class="contact" id="contact">
   <div class="col-md-6 contact_left">
     <form>
-      <input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-      <input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-      <input type="text" class="textbox" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-      <textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+      <input id="mail_name" type="text" class="textbox" value="Name" onfocus="this.value = '';updateMailUrl()" onblur="if (this.value == '') {this.value = 'Name';}else{updateMailUrl();}">
+      <input id="mail_mail" type="text" class="textbox" value="Email" onfocus="this.value = '';updateMailUrl()" onblur="if (this.value == '') {this.value = 'Email';}else{updateMailUrl();}">
+      <input id="mail_subject" type="text" class="textbox" value="Subject" onfocus="this.value = '';updateMailUrl()" onblur="if (this.value == '') {this.value = 'Subject';}else{updateMailUrl();}">
+      <textarea onfocus="this.value = '';updateMailUrl()" onblur="if (this.value == '') {this.value = 'Message';} else{updateMailUrl();}">Message</textarea>
       <div class="contact_btn">
-        <label class="btn2 btn-2 btn2-1b"><input type="submit" value="Send"></label>
+        <a id="mail_open_mail_to_link" href="mailto:mkliuyag@163.com;39M@outlook.com" class="btn2 btn-2 btn2-1b">Send</a>
       </div>
+      <script language="JavaScript">
+        function updateMailUrl() {
+          var email = 'mkliuyag@163.com';
+          var otherEmail = '39M@outlook.com';
+          var mailToString =
+                  'mailto:' + email +
+                  ';' + otherEmail +
+                  '?subject=' + $('#mail_subject').val() +
+                  '&body=FROM: '+ $('#mail_name').val() + ' '+ $('#mail_mail').val();
+          var mailtoTrigger = $('#mail_open_mail_to_link');
+          mailtoTrigger.attr('href', mailToString);
+        }
+      </script>
     </form>
   </div>
   <div class="col-md-6 contact_right">
