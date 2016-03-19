@@ -1,14 +1,12 @@
-# LMixMainPage
-A static showing page for a game (LMix).
-
-### Feature
-1. 滚动广告Slide需要再想两个内容，之后做国际化
-2. 曲集替换图片、分类（注意把歌曲信息P上去）
-3. 找个地方放下载链接和repo地址
-4. 滚动广告Slide的图片是否要加深处理一下，类似于背景一样
+# LMixMainPage  
+A static showing page for a game (LMix).  
+  
+### Feature  
+1. 滚动广告Slide需要再想两个内容，之后做国际化  
+2. 曲集替换图片、分类（注意把歌曲信息P上去）  
+3. 找个地方放下载链接和repo地址  
+4. 滚动广告Slide的图片是否要加深处理一下，类似于背景一样  
 5. 高分辨率图片  
-6. 无衬线字体
-7. 去掉社交链接
-8. 能力评价是干啥用的？可以去掉
-9. 最后加上联系方式x2
-10. 那个新闻的图片去掉
+6. 无衬线字体  
+7. 用户评价tag  
+8. 最后的提交？？？

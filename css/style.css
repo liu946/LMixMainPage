@@ -220,6 +220,13 @@ p.phone i {
   border-radius:30em;
   opacity:1;
 }
+/*adding css*/
+.link-top > p {
+    margin-top: 60%;
+    font-size: x-large;
+    color: aliceblue;
+}
+/*adding css end*/
 #slider3-pager a {
   padding: 0;
 }
